@@ -67,5 +67,5 @@ function calculateNewVelocity(acceleration, velocity, time) {
     throw new Error("Invalid time parameter");
   }
 
-  return velocity + acceleration * (time / 3600); // Convert time from seconds to hours
+  return velocity + (acceleration * 3.6 * time); // Convert time from seconds to hours
 }
